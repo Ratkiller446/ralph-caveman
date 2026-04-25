@@ -65,10 +65,9 @@ Pick how many grunt you want. Default is `full`.
 ## 🚀 Setup
 
 1. **Get Gemini CLI**: Ensure latest version installed.
-2. **Install Skill**:
+2. **Install Extension**:
    ```bash
-   mkdir -p ~/.gemini/skills/ralph-caveman
-   # Copy SKILL.md to the folder
+   gemini extensions install https://github.com/Ratkiller446/ralph-caveman
    ```
 3. **Run**:
    ```bash

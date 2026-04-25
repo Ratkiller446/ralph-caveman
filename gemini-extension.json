@@ -1,0 +1,12 @@
+{
+  "name": "ralph-caveman",
+  "version": "1.0.0",
+  "description": "Hybrid of Ralph Wiggum Loop and Caveman Plugin for iterative, token-efficient development.",
+  "commands": [
+    {
+      "name": "ralph-caveman",
+      "description": "Start an iterative development loop with ultra-terse communication.",
+      "prompt": "/caveman ultra /ralph-loop {{selection}}"
+    }
+  ]
+}

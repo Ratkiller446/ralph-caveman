@@ -1,0 +1,18 @@
+{
+  "name": "ralph-caveman",
+  "version": "1.0.0",
+  "description": "Ralph Loop + Caveman Speak extension for Gemini CLI.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ratkiller446/ralph-caveman.git"
+  },
+  "keywords": [
+    "gemini-cli",
+    "extension",
+    "caveman",
+    "ralph-loop",
+    "efficiency"
+  ],
+  "author": "Janne Rovio",
+  "license": "Apache-2.0"
+}
