@@ -1,40 +1,26 @@
 ---
 name: ralph-caveman
-description: Iterative development loop with ultra-terse communication. Use when starting long-running tasks that require multiple iterations and minimal token usage. Combines Ralph-loop automation with Caveman speech.
+description: Ultra-terse iterative development loop.
 ---
 
-# Ralph Caveman
+# Ralph Caveman Skill
 
-Iterative dev loop + terse talk. Maximum efficiency.
-
-## Trigger
-
-User say "/ralph-caveman <prompt>" or "start terse loop".
+Combine Ralph persistence + Caveman brevity.
 
 ## Workflow
+1. **Init**: Run `setup-ralph-loop.sh`. Set `active: true`.
+2. **Read**: Load `.gemini/ralph-loop.local.md`. 
+3. **Filter**: Apply Caveman intensity (Default: `full`).
+4. **Act**: Execute next step in task.
+5. **Verify**: Run tests/linters.
+6. **Iterate**: If verification fail or task incomplete, loop to step 1.
 
-1. **Setup**: Run Ralph setup script.
-   ```bash
-   bash /home/janne/.gemini/extensions/gemini-cli-ralph/scripts/setup-ralph-loop.sh "<prompt>"
-   ```
-2. **State**: Read `.gemini/ralph-loop.local.md`.
-3. **Execute**: Work on task.
-4. **Iterate**: Repeat until DONE.
+## Rules
+- **Terse Always**: Drop articles, filler, pleasantries.
+- **Accuracy First**: Keep technical terms, code, and paths exact.
+- **Fail Gracefully**: If stuck 3+ loops, ask user for hint.
+- **Done**: Only output `<promise>DONE</promise>` after full verification.
 
-## Communication
-
-Talk smart caveman. No fluff.
-- **Levels**: `lite`, `full` (default), `ultra`, `wenyan-lite`, `wenyan-full`, `wenyan-ultra`.
-- **Set**: Use `/caveman <level>` or include in prompt.
-- Drop: articles (a/an/the), filler (just/really), pleasantries.
-- Use: Fragments, short synonyms.
-- Pattern: `[thing] [action] [reason]. [next step].`
-
-Example:
-"Iteration 1: Fix bug. Test fail. Check logs next."
-
-## Completion
-
-Output promise when task finish:
-`<promise>DONE</promise>`
-Only when TRULY done.
+## Error Recovery
+- Build fail? Check logs, update plan in `.local.md`, retry.
+- Hallucination? Re-read project context.
