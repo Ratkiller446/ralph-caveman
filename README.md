@@ -30,3 +30,38 @@ Together? **Ralph Caveman**.
 | `full` | Drop articles. Classic. | "New ref → re-render. Wrap in `useMemo`." |
 | `ultra` | Abbrev everything. Max. | "New ref → re-render. `useMemo`." |
 | `wenyan` | Classical Chinese style. | "物出新參照，致重繪。useMemo 包之。" |
+
+## 🚀 Setup
+
+1. **Get Gemini CLI**: Ensure latest version.
+2. **Install Skill**:
+   ```bash
+   mkdir -p ~/.gemini/skills/ralph-caveman
+   cp SKILL.md ~/.gemini/skills/ralph-caveman/
+   ```
+
+## ⌨️ Commands
+
+| Command | Action |
+| :--- | :--- |
+| `/ralph-caveman "<prompt>"` | Start iterative terse loop. |
+| `/caveman <level>` | Switch intensity (lite, full, ultra). |
+| `stop caveman` | Return to verbose talk. |
+
+## 🔄 Loop Flow
+
+```text
+[ USER PROMPT ] 
+      │
+      ▼
+[ SETUP RALPH ] ◄────┐
+      │              │
+      ▼              │
+[ READ STATE  ]      │ (NOT DONE)
+      │              │
+      ▼              │
+[ EXECUTE TASK ] ────┘
+      │
+      ▼
+[ PROMISE: DONE ] ──► [ FINISH ]
+```
