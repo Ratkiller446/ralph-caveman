@@ -91,10 +91,10 @@ Pick how many grunt you want. Default is `full`.
 
 ## 📜 Law (Apache 2.0)
 
-Copyright 2026 Ratkiller446 & JuliusBrussee.
+Copyright 2026 Janne Rovio & JuliusBrussee.
 Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for details.
 
 ---
 <p align="center">
-  Made with 🦴 by Ratkiller446
+  Made with 🦴 by Janne Rovio
 </p>
