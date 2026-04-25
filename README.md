@@ -65,3 +65,11 @@ Together? **Ralph Caveman**.
       ▼
 [ PROMISE: DONE ] ──► [ FINISH ]
 ```
+
+---
+
+## 📜 Law (Apache 2.0)
+
+Copyright 2026 Ratkiller446 & JuliusBrussee.
+Licensed under the Apache License, Version 2.0 (the "License").
+You may not use this file except in compliance with the License.
