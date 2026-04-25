@@ -15,3 +15,18 @@ Then came **Caveman**. He drop fluff. He speak true.
 Together? **Ralph Caveman**.
 
 > "I iterate, therefore I am terse." — *Ralph the Caveman*
+
+## 🛠️ Features
+
+- **Persistent Iteration**: Ralph loop logic. No stop until DONE.
+- **75% Token Savings**: Caveman speak. Drop "the", "a", "just".
+- **Superpowers Ready**: Use with Brainstorming, Plans, Debugging.
+
+## 🗣️ Speak Levels
+
+| Level | Change | Example |
+| :--- | :--- | :--- |
+| `lite` | No filler. Pro but tight. | "Component re-renders due to new ref. Use `useMemo`." |
+| `full` | Drop articles. Classic. | "New ref → re-render. Wrap in `useMemo`." |
+| `ultra` | Abbrev everything. Max. | "New ref → re-render. `useMemo`." |
+| `wenyan` | Classical Chinese style. | "物出新參照，致重繪。useMemo 包之。" |
