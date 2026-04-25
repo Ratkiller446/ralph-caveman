@@ -85,9 +85,15 @@ Pick how many grunt you want. Default is `full`.
 
 ## 🔄 Loop Flow
 
-<p align="center">
-  <img src="https://mermaid.ink/img/pako:eNptkMFugzAMhl_F8nEVvUAnTdtUaU-7TVuXHSYmUAtKiZKEKKTvvmBId9pD9ue3_R8_G-tYpSyoS9p7Z6AL3Iit18Y6W9F98M6uDIdmZ8Z7-eT0K8t-lXm_ypVfqR8Hw-P-r-0XFis8I38mNo0Z_0y-8fR4zNfE5nEPrImvR2I8MvN53Anr6G89kR7V5-uefE_D_D33X6K8L9WfWfWrOq5iXzZ5y4_X9Lidm33_6680aD0E" alt="Loop Flow Chart">
-</p>
+```mermaid
+graph TD
+  Prompt[USER PROMPT] --> Setup[SETUP RALPH]
+  Setup --> State[READ STATE]
+  State --> Exec[EXECUTE TASK]
+  Exec --> Loop{DONE?}
+  Loop -- NO --> Setup
+  Loop -- YES --> Finish[FINISH]
+```
 
 ## 📜 Law (Apache 2.0)
 
