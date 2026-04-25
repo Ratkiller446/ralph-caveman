@@ -89,7 +89,8 @@ Pick how many grunt you want. Default is `full`.
 graph TD
   Prompt[USER PROMPT] --> Setup[SETUP RALPH]
   Setup --> State[READ STATE]
-  State --> Exec[EXECUTE TASK]
+  State --> Caveman[[CAVEMAN FILTER]]
+  Caveman --> Exec[EXECUTE TASK]
   Exec --> Loop{DONE?}
   Loop -- NO --> Setup
   Loop -- YES --> Finish[FINISH]
