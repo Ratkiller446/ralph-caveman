@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="https://img.icons8.com/color/512/ralph-wiggum.png" width="120" />
   <img src="https://em-content.zobj.net/source/apple/391/rock_1faa8.png" width="120" />
 </p>
 
